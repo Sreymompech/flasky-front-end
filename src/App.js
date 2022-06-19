@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
+// Display a driver
 function App() {
+  const tsunoda = {
+    name: "Yuki Tsunoda",
+    team: "Alpha Tauri",
+    country: "Japan",
+    handsome: true,
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Driver</h1>
+      <h2>{tsunoda.name}</h2>
+      <ul>
+        <li>Team: {tsunoda.team}</li>
+        <li>Country: {tsunoda.country}</li>
+        <li>Handsome: {tsunoda.handsome.toString()}</li>
+      </ul>
     </div>
   );
 }
